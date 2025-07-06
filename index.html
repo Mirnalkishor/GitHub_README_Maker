@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile README Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitHub Profile README Generator</h1>
+        </header>
+        <form id="readmeForm">
+            <div class="input-group">
+                <label>Hi 👋, I'm</label>
+                <input type="text" id="name" placeholder="Your Name">
+            </div>
+            <div class="input-group">
+                <label>Short Bio</label>
+                <input type="text" id="profile" placeholder="Short Bio">
+            </div>
+            <div class="input-group">
+                <label>🔭 I’m currently working on</label>
+                <input type="text" id="currentlyWorking" placeholder="What are you working on?">
+            </div>
+            <div class="input-group">
+                <label>🌱 I’m currently learning</label>
+                <input type="text" id="currentlyLearning" placeholder="What are you learning?">
+            </div>
+            <div class="input-group">
+                <label>💬 Ask me about</label>
+                <input type="text" id="askMe" placeholder="Ask me about...">
+            </div>
+            <div class="input-group">
+                <label>📫 Contact</label>
+                <input type="text" id="contact" placeholder="Contact Details">
+            </div>
+            <div class="input-group">
+                <label>🛠 Tools (comma-separated)</label>
+                <input type="text" id="tools" placeholder="e.g., Python, SQL, Git">
+            </div>
+            <div class="input-group">
+                <label>LinkedIn</label>
+                <input type="text" id="linkedin" placeholder="LinkedIn URL">
+            </div>
+            <div class="input-group">
+                <label>GitHub</label>
+                <input type="text" id="github" placeholder="GitHub URL">
+            </div>
+            <div class="input-group">
+                <label>LeetCode</label>
+                <input type="text" id="leetcode" placeholder="LeetCode URL">
+            </div>
+            <button type="button" id="generateBtn">Generate README</button>
+        </form>
+        <div class="output">
+            <h2>Generated README.md</h2>
+            <textarea id="generatedReadme" readonly></textarea>
+            <button id="copyBtn">Copy to Clipboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
